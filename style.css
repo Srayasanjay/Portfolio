@@ -245,6 +245,29 @@ section {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/*Figma projects Update*/
+.figma-preview{
+    position: relative;
+    padding: 40px;
+}
+.figma-preview img{
+    width: 100%;
+    border-radius: 10px;
+}
+.overlay{
+    text-decoration: none;
+    position:relative;
+    font-size: 9px;
+    text-align: center;
+    color:rgb(153, 153, 208);
+    border-radius:0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.figma-preview:hover .overlay{
+    opacity: 100;;
+}
 .project-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
